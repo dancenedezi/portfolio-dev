@@ -1,0 +1,95 @@
+footer {
+  display: grid;
+  justify-items: center;
+  padding-block: 128px 200px;
+
+
+  background: url(../assets/images/Background_Contacts.png);
+  background-size: cover;
+
+  .subtitle {
+    span {
+      color: var(--purple);
+    }
+  }
+
+  h2 {
+    padding-block: 12px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 48px;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      position: relative;
+
+      width: 400px;
+      padding: 20px;
+      color: var(--gray-400);
+      border-radius: 8px;
+      background-color: var(--gray-300);
+      text-decoration: none;
+
+      border: 1.5px solid transparent;
+      
+      img {
+        filter: grayscale(1);
+      }
+
+      &::after {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background: url(../assets/icons/ArrowUpRight.svg);
+        right: 20px;
+        position: absolute;
+      }
+    }
+
+    a:nth-child(1) {
+      &:hover {
+        border-color: var(--blue);
+        img {
+          filter: grayscale(0);
+        }
+      }
+    }
+
+    a:nth-child(2) {
+      &:hover {
+        border-color: #BB72E9;
+        
+        img {
+          filter: grayscale(0);
+        }
+      }
+    }
+
+    a:nth-child(3) {
+      
+      &:hover {
+        border-color: #9295ff;
+        img {
+          filter: contrast(3.5);
+        }
+      }
+    }
+
+    a:nth-child(4) {
+      
+      &:hover {
+        border-color: #FFF;
+        img {
+          filter: brightness(2);
+        }
+      }
+    }
+
+  }
+}
